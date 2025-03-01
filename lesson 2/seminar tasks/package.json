@@ -1,0 +1,16 @@
+{
+  "name": "seminar-tasks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@colors/colors": "^1.6.0",
+    "number-precision": "^1.6.0"
+  }
+}
