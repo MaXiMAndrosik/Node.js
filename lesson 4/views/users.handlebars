@@ -1,0 +1,63 @@
+<h1>{{ message }}</h1>
+
+{{#if users}}
+
+<div class="bd-example-snippet bd-code-snippet">
+    <div class="bd-example m-0 border-0">
+        <table class="table table-sm table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">ID: </th>
+                    <th scope="col">First name: </th>
+                    <th scope="col">Last name: </th>
+                    <th scope="col">Age: </th>
+                    <th scope="col">City: </th>
+                </tr>
+            </thead>
+            {{#each users}}
+            <tbody>
+                <tr>
+                    <th scope="col">{{id }}</th>
+                    <th scope="col">{{firstName }}</th>
+                    <th scope="col">{{secondName }}</th>
+                    <th scope="col">{{age }}</th>
+                    <th scope="col">{{city }}</th>
+                </tr>
+            </tbody>
+            {{/each}}
+        </table>
+
+    </div>
+</div>
+
+{{/if}}
+
+{{#if user}}
+
+<div class="bd-example-snippet bd-code-snippet">
+    <div class="bd-example m-0 border-0">
+        <table class="table table-sm table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">ID: </th>
+                    <th scope="col">First name: </th>
+                    <th scope="col">Last name: </th>
+                    <th scope="col">Age: </th>
+                    <th scope="col">City: </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">{{ user.id }}</th>
+                    <th scope="col">{{ user.firstName }}</th>
+                    <th scope="col">{{ user.secondName }}</th>
+                    <th scope="col">{{ user.age }}</th>
+                    <th scope="col">{{ user.city }}</th>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+{{/if}}
